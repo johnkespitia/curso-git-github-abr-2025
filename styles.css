@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  input, button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1em;
+  }
+  
+  #pokemonInfo {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  img {
+    max-width: 150px;
+  }
+  
