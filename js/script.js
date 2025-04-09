@@ -28,4 +28,3 @@ document.getElementById('searchBtn').addEventListener('click', () => {
         pokemonInfo.innerHTML = `<p>${error.message}</p>`;
       });
   });
-  
