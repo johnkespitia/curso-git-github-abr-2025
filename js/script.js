@@ -16,7 +16,7 @@ document.getElementById('searchBtn').addEventListener('click', () => {
       })
       .then(data => {
         pokemonInfo.innerHTML = `
-          <h2>${data.name.toUpperCase()}</h2>
+          <h1>${data.name.toUpperCase()}</h1>
           <img src="${data.sprites.front_default}" alt="${data.name}">
           <p><strong>Altura:</strong> ${data.height}</p>
           <p><strong>Peso:</strong> ${data.weight}</p>
