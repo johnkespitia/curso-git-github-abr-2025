@@ -22,6 +22,10 @@ document.getElementById('searchBtn').addEventListener('click', () => {
           <p><strong>Altura:</strong> ${data.height}</p>
           <p><strong>Peso:</strong> ${data.weight}</p>
           <p><strong>Tipo:</strong> ${data.types.map(typeInfo => typeInfo.type.name).join(', ')}</p>
+          <h3>Habilidades:</h3>
+          <ul>
+            ${data.abilities.map(abilityInfo => `<li>${abilityInfo.ability.name}</li>`).join('')}
+          </ul>
         `;
       })
       .catch(error => {
