@@ -1,4 +1,6 @@
-document.getElementById('searchBtn').addEventListener('click', () => {
+// Esperar a que el DOM esté completamente cargado
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('searchBtn').addEventListener('click', () => {
     const pokemonName = document.getElementById('pokemonName').value.toLowerCase().trim();
     const pokemonInfo = document.getElementById('pokemonInfo');
   
@@ -27,4 +29,5 @@ document.getElementById('searchBtn').addEventListener('click', () => {
         pokemonInfo.innerHTML = `<p>${error.message}</p>`;
       });
   });
+});
   
